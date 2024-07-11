@@ -24,7 +24,7 @@ export default async function Home() {
   });
 
   return (
-    <div>
+    <div className='home'>
       <h2>Unnamed Billiards Roguelite</h2>
       <ul>
         {posts.map(({ id, title, date }) => (

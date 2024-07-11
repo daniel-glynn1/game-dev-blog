@@ -21,6 +21,7 @@
 html, body {
   background-color: var(--dark);
   color: var(--light);
+  /* width: 100%; */
 }
 
 
@@ -29,6 +30,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+  
+  
 }
 
 a {
@@ -40,7 +47,11 @@ header {
   padding: 1.5rem 2rem;
   background-color: var(--primary);
   color: var(--light);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header h1 {
@@ -51,4 +62,13 @@ header h1 {
 
 main {
   padding: 2rem;
+  align-self: center;
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto; /* Center the container */
+  padding: 1rem;
+}
+
+
