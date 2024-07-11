@@ -29,9 +29,11 @@ export default async function Home() {
       <ul>
         {posts.map(({ id, title, date }) => (
           <li key={id}>
-            <p>{date}</p>
             <Link href={`/posts/${id}`}>
-              <h3>{title}</h3>
+              <div className='postLink'>
+                <p>{date}</p>
+                <h3>{title}</h3>
+              </div>
             </Link>
             
           </li>

@@ -12,6 +12,10 @@ ul {
 }
 
 li {
+  margin: 0;
+}
+
+.postLink {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,8 +24,6 @@ li {
 
 
   color: var(--secondary);
-
-  margin: 0;
 }
 
 li p {
