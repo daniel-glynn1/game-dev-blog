@@ -1,10 +1,13 @@
 {
   "name": "game-dev-blog",
   "version": "0.1.0",
+  "homepage": "https://danie-glynn1.github.io/game-dev-blog",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -17,6 +20,7 @@
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "eslint-config-next": "14.2.5",
+    "gh-pages": "^6.1.1"
   }
 }
