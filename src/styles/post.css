@@ -1,0 +1,19 @@
+.backButton {
+  background: var(--secondary);
+  color: var(--dark);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.dateText {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+article {
+ 
+}
+
+article h1 {
+  margin-bottom: 0;
+}
