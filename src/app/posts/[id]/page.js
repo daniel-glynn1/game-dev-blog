@@ -26,7 +26,9 @@ export default async function Post({ params }) {
       <article>
         <h1>{title}</h1>
         <p className='dateText'>{date}</p>
-        <ReactMarkdown children={content} remarkPlugins={[remarkGfm]} />
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          {content}
+        </ReactMarkdown>
       </article>
       
     </div>
