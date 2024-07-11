@@ -1,7 +1,7 @@
 {
   "name": "game-dev-blog",
   "version": "0.1.0",
-  "homepage": "https://danie-glynn1.github.io/game-dev-blog",
+  "homepage": "https://daniel-glynn1.github.io/game-dev-blog",
   "private": true,
   "scripts": {
     "dev": "next dev",
