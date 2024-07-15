@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 import Link from 'next/link';
 
 import '../../../styles/post.css';
@@ -26,10 +27,11 @@ export default async function Post({ params }) {
       <article>
         <h1>{title}</h1>
         <p className='dateText'>{date}</p>
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
           {content}
         </ReactMarkdown>
       </article>
+      
       
     </div>
   );
