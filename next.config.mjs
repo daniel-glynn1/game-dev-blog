@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: "export",
-  // basePath: "/game-dev-blog",
+  output: "export",
 };
 
 export default nextConfig;
